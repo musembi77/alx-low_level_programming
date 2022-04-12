@@ -4,20 +4,19 @@
 #include <time.h>
 
 /**
- * main -Entry point
+ * main -Entry
  *
- * description - prints all single digits from 0 - 10
+ * desciption - prints all alphabets in lowercase except q and e
  *
- * 
  * Return: Always (0) Success
- *
  * */
 int main(void)
 {
-	int n;
+	int x;
 
-	for (n = 0; n <= 9; n++)
-		putchar(n);
+	for(x = "a"; x <="z"; x++)
+		if(x != "q" && x != "e")
+			putchar(x);
 	putchar("\n");
 	return (0);
 }
